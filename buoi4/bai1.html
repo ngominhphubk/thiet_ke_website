@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Bài 1</title>
+    <style>
+        html {
+            font-family: sans-serif;
+        }
+        .main {
+            width: 60%;
+            height: 80vh;
+            background:rgb(231, 187, 65);
+            margin: auto;
+            margin-top: 10vh;
+        }
+        form.form-display {
+            display: table;
+        }
+        div.form-display {
+            display: block;
+            margin-left: 20%;
+        }
+        label, input {
+            display: inline-block;
+        }
+        h1 {
+            text-align: center;
+            margin-bottom: 40px;
+        }
+        label, input, textarea {
+            margin-bottom: 12px;
+            outline: none;
+        }
+        label {
+            width: 160px;
+            margin-right: 5vw;
+        }
+        p {
+            display: inline;
+        }
+        button {
+            margin-top: 20px;
+            margin-left: 48%;
+        }
+        .input-text {
+            width: 400px;
+        }
+    </style>
+</head>
+<body>
+   <div class="main">
+        <h1>Đăng ký thông tin</h1>
+        <form action="" method="GET" class="form-display"></form>
+        <div class="form-display">
+            <label for="name">Họ và tên:</label>
+            <input type="text" name="name" id="name" class="input-text">
+        </div>
+        <div class="form-display">
+        <label for="address">Địa chỉ:</label>
+        <input type="text" name="address" id="address" class="input-text">
+        </div>
+        <div class="form-display">
+           <label for="phone-number">Điện thoại:</label>
+           <input type="text" name="phone-number" id="phone-number" class="input-text">
+        </div>
+        <div class="form-display">
+           <label for="gender">Giới tính: </label>
+           <input type="radio" name="gender" id="gender1" value="Nam">
+           <p for="gender1" >Nam</p>
+           <input type="radio" name="gender" id="gender2" value="Nữ">
+           <p for="gender2" >Nữ</p>
+        </div>
+        <div class="form-display">
+           <label for="account">Tên  tài khoản:</label>
+           <input type="text" name="account" id="account" class="input-text">
+        </div>
+        <div class="form-display">
+           <label for="password">Mật khẩu:</label>
+           <input type="text" name="password" id="password" class="input-text">
+        </div>
+        <div class="form-display">
+           <label for="re-password">Nhập lại mật khẩu:</label>
+           <input type="text" name="re-password" id="re-password" class="input-text">
+        </div>
+        <div class="form-display">
+           <label for="note">Ghi chú thêm:</label>
+           <textarea id="note" name="note" rows="4" cols="45"></textarea>
+        </div>
+        <div class="form-display">
+           <label for="avarta">ảnh avarta:</label> 
+                   <input type="file" name="avatar" id="avatar">
+        </div>
+        <div class="form-display">
+            <label for="hobbies">Sở thích</label>
+               <input type="checkbox" name="hobbies" id="hobbies1" value="Thể thao">
+               <p for="hobbies1" >Thể thao</p> <br> <label for=""></label>
+               <input type="checkbox" name="hobbies" id="hobbies2" value="Âm nhạc">
+               <p for="hobbies2" >Âm nhạc</p> <br>  <label for=""></label> 
+               <input type="checkbox" name="hobbies" id="hobbies3" value="Game">
+               <p for="hobbies3" >Game</p>
+        </div>
+        <button type="submit">Đồng ý</button>
+   </div> 
+</body>
+</html>
