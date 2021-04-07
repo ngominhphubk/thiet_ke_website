@@ -2,105 +2,126 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Bài 1</title>
     <style>
         html {
-            font-family: sans-serif;
+            font-family: Arial, Helvetica, sans-serif;
         }
         .main {
-            width: 60%;
-            height: 80vh;
-            background:rgb(231, 187, 65);
-            margin: auto;
-            margin-top: 10vh;
-        }
-        form.form-display {
-            display: table;
-        }
-        div.form-display {
-            display: block;
-            margin-left: 20%;
-        }
-        label, input {
-            display: inline-block;
+            width: 60vw;
+            height: 86vh;
+            margin-top: 5vh;
+            margin-left: 20vw;
+            background:linear-gradient(180deg, rgb(56, 31, 202), rgb(195, 233, 107)); 
+            position: relative;
+            min-width: 529px;
         }
         h1 {
             text-align: center;
-            margin-bottom: 40px;
+            color: rgb(207, 163, 68);
+            padding-top: 30px;
         }
-        label, input, textarea {
-            margin-bottom: 12px;
+        .text-box {
+            width: 45%;
+            position: absolute;
             outline: none;
+            padding:10px 0px;
         }
         label {
-            width: 160px;
-            margin-right: 5vw;
+            display: inline-block;
+            width: 40%;
+            margin-left: 20px;
+            margin-bottom: 30px;
         }
-        p {
-            display: inline;
+        #phone {
+            width: 23%;
+        }
+        .hobbies,
+        .gender {
+            width: auto;
+        }
+        label.hobbies,  
+        label.gender {
+            margin-left: 5px;
+            margin-right: 40px;
+        }
+        input.hobbies {
+            margin-left: calc(40% + 20px);
+        }
+        #hobbies-1 {
+            margin-left: -4px;
+        }
+        textarea {
+            padding: 0px;
+            border: 0px;
+            outline: none;
+            position: absolute;
+            margin-left: calc(40% + 20px);
+        }
+        .label-textarea {
+            position: absolute;
+            margin-top: 40px;
+        }
+        #avatar {
+            margin-top: 116px;
         }
         button {
-            margin-top: 20px;
-            margin-left: 48%;
+            transform: translateX(-50%);
+            margin-left: 50%;
+            padding:10px 20px;
+            border: 0px;
+            background: rgb(236, 35, 52);
         }
-        .input-text {
-            width: 400px;
+        button:hover {
+            opacity: 0.5;
         }
     </style>
 </head>
 <body>
-   <div class="main">
-        <h1>Đăng ký thông tin</h1>
-        <form action="" method="GET" class="form-display"></form>
-        <div class="form-display">
-            <label for="name">Họ và tên:</label>
-            <input type="text" name="name" id="name" class="input-text">
-        </div>
-        <div class="form-display">
-        <label for="address">Địa chỉ:</label>
-        <input type="text" name="address" id="address" class="input-text">
-        </div>
-        <div class="form-display">
-           <label for="phone-number">Điện thoại:</label>
-           <input type="text" name="phone-number" id="phone-number" class="input-text">
-        </div>
-        <div class="form-display">
-           <label for="gender">Giới tính: </label>
-           <input type="radio" name="gender" id="gender1" value="Nam">
-           <p for="gender1" >Nam</p>
-           <input type="radio" name="gender" id="gender2" value="Nữ">
-           <p for="gender2" >Nữ</p>
-        </div>
-        <div class="form-display">
-           <label for="account">Tên  tài khoản:</label>
-           <input type="text" name="account" id="account" class="input-text">
-        </div>
-        <div class="form-display">
-           <label for="password">Mật khẩu:</label>
-           <input type="text" name="password" id="password" class="input-text">
-        </div>
-        <div class="form-display">
-           <label for="re-password">Nhập lại mật khẩu:</label>
-           <input type="text" name="re-password" id="re-password" class="input-text">
-        </div>
-        <div class="form-display">
-           <label for="note">Ghi chú thêm:</label>
-           <textarea id="note" name="note" rows="4" cols="45"></textarea>
-        </div>
-        <div class="form-display">
-           <label for="avarta">ảnh avarta:</label> 
-                   <input type="file" name="avatar" id="avatar">
-        </div>
-        <div class="form-display">
-            <label for="hobbies">Sở thích</label>
-               <input type="checkbox" name="hobbies" id="hobbies1" value="Thể thao">
-               <p for="hobbies1" >Thể thao</p> <br> <label for=""></label>
-               <input type="checkbox" name="hobbies" id="hobbies2" value="Âm nhạc">
-               <p for="hobbies2" >Âm nhạc</p> <br>  <label for=""></label> 
-               <input type="checkbox" name="hobbies" id="hobbies3" value="Game">
-               <p for="hobbies3" >Game</p>
-        </div>
-        <button type="submit">Đồng ý</button>
-   </div> 
+    <div class="main"> 
+        <h1>
+            Đăng ký thông tin 
+        </h1>
+        <label for="name">Name</label>
+        <input type="text" id="name" name="name" required class="text-box" placeholder="enter your name">
+        <br>
+        <label for="address">Address</label>
+        <input type="text" name="address" id="address" class="text-box" placeholder="enter your address">
+        <br>
+        <label for="phone">Address</label>
+        <input type="tel" name="phone" id="phone" class="text-box" placeholder="enter your phone number">
+        <br>
+        <label for="gender" >Gender</label>
+        <input type="radio" name="gender" class="gender" id="male">
+        <label for="male" class="gender">male</label>
+        <input type="radio" name="gender" id="female" class="gender">
+        <label for="female" class="gender">female</label>
+        <br>
+        <label for="account">Account</label>
+        <input type="text" name="account" id="account" class="text-box" placeholder="enter your name' account">
+        <br>
+        <label for="password">Password</label>
+        <input type="password" name="password" id="password" class="text-box" placeholder="enter your password">
+        <br>
+        <label for="re-password">Re-password</label>
+        <input type="password" name="re-password" id="re-password" class="text-box" placeholder="retype password">
+        <br>
+        <label for="note" class="label-textarea">Note</label>
+        <textarea name="note" id="note" cols="40" rows="8"></textarea>
+        <br>
+        <label id="avatar">Avatar</label>
+        <input type="file" class="type-file">
+        <br>
+        <label >Hobbies</label>
+        <input type="checkbox" name="hobbies" id="hobbies-1" class="hobbies">
+        <label for="hobbies-1" class="hobbies" >Game</label><br>
+        <input type="checkbox" name="hobbies" id="hobbies-2" class="hobbies">
+        <label for="hobbies-2" class="hobbies">Game</label><br>
+        <input type="checkbox" name="hobbies" id="hobbies-3" class="hobbies">
+        <label for="hobbies-3" class="hobbies">Game</label><br>
+        <button type="submit">Submit</button>
+    </div>
 </body>
 </html>
