@@ -4,14 +4,59 @@
     <meta charset="UTF-8">
     <title>Bài 2</title>
     <style>
+        html {
+            line-height: 1.6;
+        }
         .main {
-            color:#fc6;
+            color:rgb(170, 144, 92);
+            width: 50vw;
+            height: 86vh;
+            margin-top: 5vh;
+            margin-left: 25vw;
+            position: relative;
+            min-width: 529px;
+        }
+        h3 {
+            background: rgb(240, 232, 164);
+            font-weight: bold;
+            color: #000;
+            font-size: 24;
+        }
+        label {
+            display: inline-block;
+            width: 22%;
+        }
+        h3,
+        label {
+            padding-left: 10px;
+        }
+        input[type="text"] {
+            width: 46%;
+            height: 24px;
+            margin-left: 60px;
+            border: 1px solid #ccc;
+        }
+        input:focus {
+            /* outline: rgb(103, 208, 240) auto 1px; */
+            outline: none;
+             border: 1px solid rgba(81, 203, 238, 1);
+            box-shadow: 0 0 5px 1px rgba(81, 203, 238, 1);
+        }
+        p {
+            display: none;
+        }
+        .account:focus + p {
+            display: inline;
         }
     </style>
 </head>
 <body>
     <div class="main">
-
+        <h3>Thông tin đăng nhập</h3>
+        <label for="account">Chọn tên đăng  nhập</label>
+        <input type="text" id="account" class="account">
+        <p class="acc_title">vd:hoaithu</p>
+        <h3>Thông tin cá nhân</h3>
     </div>    
 </body>
 </html>
