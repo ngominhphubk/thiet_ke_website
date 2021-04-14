@@ -4,17 +4,24 @@
     <meta charset="UTF-8">
     <title>Bài 2</title>
     <style>
+        * {
+            margin: 0px;
+            padding: 0px;
+            box-sizing: border-box;
+        }
         html {
             line-height: 1.6;
         }
         .main {
-            color:rgb(170, 144, 92);
             width: 50vw;
             height: 86vh;
             margin-top: 5vh;
             margin-left: 25vw;
             position: relative;
             min-width: 529px;
+        }
+        .text__color--red {
+            color: rgb(235, 23, 23);
         }
         h3 {
             background: rgb(240, 232, 164);
@@ -24,17 +31,44 @@
         }
         label {
             display: inline-block;
-            width: 22%;
+            width: 30%;
         }
         h3,
         label {
             padding-left: 10px;
+            margin: 5px 0px;
         }
-        input[type="text"] {
+        .account {
             width: 46%;
             height: 24px;
-            margin-left: 60px;
+            margin-left: 50px;
             border: 1px solid #ccc;
+        }
+        .textBox-size-s {
+            width: 5%;
+        }
+        .textBox-size-m {
+            width: 40%;
+        }
+        .textBox-size-l {
+            width: 59.8%;
+        }
+        .gender {
+            margin-left: 50px;
+        }
+        .label-gender {
+            width: auto;
+        }
+        select,
+        .label-b-day {
+            padding: 0px;
+            margin-left: 50px;
+            width: auto;
+        }
+        .sub-label-b-day {
+            margin-left: 10px;
+            padding: 0px;
+            width: auto;
         }
         input:focus {
             /* outline: rgb(103, 208, 240) auto 1px; */
@@ -42,21 +76,82 @@
              border: 1px solid rgba(81, 203, 238, 1);
             box-shadow: 0 0 5px 1px rgba(81, 203, 238, 1);
         }
+        input[type=file] {
+            margin-left: calc(55.6px + 30%);
+        }
         p {
             display: none;
         }
         .account:focus + p {
             display: inline;
         }
+        .btn {
+            margin-top: 30px;
+            margin-left: 50%;
+            transform: translateX(-50%);
+            display: inline-block;
+            text-decoration: none;
+            background: transparent;
+            border: none;
+            outline: none;
+            padding: 6px 24px;
+            border-radius: 50px;
+            cursor: pointer;
+            transition: opacity 0.2s ease;
+        }
+        .btn:hover {
+            opacity: 0.6;
+        }
+        .btn--submit {
+            background: rgb(240, 232, 164);
+        }
     </style>
 </head>
 <body>
     <div class="main">
         <h3>Thông tin đăng nhập</h3>
-        <label for="account">Chọn tên đăng  nhập</label>
-        <input type="text" id="account" class="account">
-        <p class="acc_title">vd:hoaithu</p>
+        <div class="text__color--red">
+            <label for="account">Chọn tên đăng  nhập</label>
+            <input type="text" id="account" class="account">
+            <p class="acc_title">vd:hoaithu</p>
+            <label for="password">Mật khẩu</label>
+            <input type="password" id="password" class="account textBox-size-m">
+            <p class="acc_title">(ít nhất 6 ký tự)</p>
+            <label for="repassword">Nhập lại mật khẩu</label>
+            <input type="password" id="repassword" class="account textBox-size-m">
+            <label for="avatar">Ảnh avatar(nếu có)</label>
+            <input type="text" id="avatar" class="account ">
+            <input type="file" class="type-file">
+        </div>
         <h3>Thông tin cá nhân</h3>
+        <label for="name">Họ và tên</label>
+        <input type="text" id="name" class="account textBox-size-l">
+        <label for="email">Địa chỉ email</label>
+        <input type="email" id="email" class="account textBox-size-l">
+        <label for="gender" >Gender</label>
+        <input type="radio" name="gender" class="gender" id="male">
+        <label for="male" class="label-gender">male</label>
+        <input type="radio" name="gender" id="female" class="gender">
+        <label for="female" class="label-gender">female</label>
+        <div class="clear"></div>
+        <label for="b-day">Chọn tên đăng  nhập</label>
+        <label for="b-day" class="label-b-day">Ngày</label>
+        <input type="text" id="b-day" class="textBox-size-s">
+        <label for="b-month" class="sub-label-b-day">Tháng</label>
+        <input type="text" id="b-month" class="textBox-size-s">
+        <label for="b-year" class="sub-label-b-day">Năm</label>
+        <input type="text" id="b-year" class="textBox-size-s">
+        <div class="clear"></div>
+        <label for="country">Nơi ở</label>
+        <select id="country">
+        <option value="Vinh" selected disabled>chọn tỉnh</option>
+        <option value="Vinh">Vinh</option>
+        <option value="Vinh">Vinh</option>
+        <option value="Vinh">Vinh</option>
+        <option value="Vinh">Vinh</option>
+        </select>
+        <div class="clear"></div>
+        <div class="btn btn--submit">Đăng ký tham gia</div>
     </div>    
 </body>
 </html>
