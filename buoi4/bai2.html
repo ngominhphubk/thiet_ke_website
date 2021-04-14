@@ -78,6 +78,11 @@
         }
         input[type=file] {
             margin-left: calc(55.6px + 30%);
+            color: #000;
+            width: 220px;
+        }
+        .type-file:hover + p {
+            display: inline;
         }
         p {
             display: none;
@@ -122,6 +127,7 @@
             <label for="avatar">Ảnh avatar(nếu có)</label>
             <input type="text" id="avatar" class="account ">
             <input type="file" class="type-file">
+            <p class="acc_title">(Ảnh gif hoặc png nếu có)</p>
         </div>
         <h3>Thông tin cá nhân</h3>
         <label for="name">Họ và tên</label>
