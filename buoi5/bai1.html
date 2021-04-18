@@ -1,0 +1,125 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>The coffee house</title>
+    <style>
+        html {
+            font-family: Arial, Helvetica, sans-serif;
+        }
+        * {
+            margin: 0px;
+            padding: 0px;
+            box-sizing: border-box;
+        }
+        body {
+            background: url(./images/bgweb.jpg);
+        }
+        .main {
+            width: 820px;
+            height: 100vh;
+            background: rgb(252, 250, 250);
+            margin: auto;
+        }
+        .img-header {
+            width: 100%;
+            height: auto;
+        }
+        .side-bar {
+            float: left;
+            display:inline;
+            width: 175px;
+            height: calc(100vh - 72px);
+            background:url(./images/logo_globe_a.gif) no-repeat right bottom;
+        }
+        .right-side {
+            width: 644px;
+            height: calc(100vh - 72px);
+            background: rgb(184, 206, 107);
+            float: left;
+        }
+        .content {
+            width: 340px;
+            height: calc(100vh - 72px);
+            background:url(./images/logo_globe_b.gif) no-repeat left bottom;
+            float: left;
+            font-size: 20px;
+            text-align: justify;
+            margin-right: 60px;
+        }
+        .content p {
+            margin: 0px 5px 30px;
+        }
+        .content p:first-child {
+            margin-top: 20px;
+
+        }
+        .nav {
+            margin-top: 20px;
+        }
+        .nav li {
+            list-style-type: none;
+            margin-bottom: 36px;
+            float: right;
+        }
+        .nav a {
+            text-decoration: none;
+            border: 1px solid #000;
+            border-right: none;
+            width: 100px;
+            display: inline-block;
+            text-align: center;
+            line-height: 40px;
+            font-weight: bold;
+            color: #000;
+        }
+        span {
+            font-weight: bold;
+            font-size: 45px;
+        }
+        .poster {
+            float:left;
+        }
+        .poster img {
+        margin-top: 20px;            
+        display: block;
+        }
+    </style>
+</head>
+<body>
+   <div class="main">
+    <a href="bai1.html" target="_parent">
+        <img src="./images/logo_scaal.gif" alt="" class="img-header">
+    </a>
+    <div class="side-bar">
+        <ul class="nav">
+            <li><a href="./b2.html" target="_parent">our story</a></li>
+            <li><a href="">products</a></li>
+            <li><a href="">this week</a></li>
+            <li><a href="./bai3.html" target="_parent">register</a></li>
+        </ul>
+    </div>
+    <div class="right-side">
+        <div class="content">
+            <p>
+                <span>Welcome</span> to the Scaal Coffee Web site, home of the finest coffee gifts in the world.
+            </p>
+            
+            <p>
+                Take a moment to view our many products. We offer fine roasted products as well as items to wear and items for the office.
+            </p>
+            <p>
+                Scaal has been serving fine coffee connoisseurs like you for over 50 years. We follow a roasting process that produces the finest coffees in the world.
+            </p>
+            <p>
+                Check with us often to see our special promotions of the week.
+            </p>
+        </div>
+        <div class="poster">
+            <img src="./images/coffee_online.gif" alt="">
+            <img src="./images/cup.jpg" alt="">
+        </div>
+    </div>
+   </div> 
+</body>
+</html>

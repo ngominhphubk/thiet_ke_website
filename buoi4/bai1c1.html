@@ -1,0 +1,110 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Document</title>
+    <style>
+        * {
+            margin: 0px;
+            padding: 0px;
+            box-sizing: border-box;
+        }
+        h1 {
+            text-align: center;
+            margin-bottom: 70px;
+        }
+        .main {
+            width: 720px;
+            height: 860px;
+            margin: auto;
+            margin-top: 100px;
+            background: linear-gradient( rgb(202, 230, 101), rgb(190, 221, 161));
+        }
+        label {
+            width: 170px;
+            display: inline-block;
+            margin: 16px 50px 0px 20px;
+        }
+        .input-m
+        {
+            width: 400px;
+            height: 24px;
+            margin-top: 5px;
+        }
+        textarea {
+            margin: 12px 0px;
+        }
+        input[type=radio] {
+            margin-top: 5px;
+        }
+        .gender {
+            width: 30px;
+            margin-left: 5px;
+            margin-right: 10px;
+            line-height: 24px;
+        }
+        .check-box-label {
+            width: auto;
+            margin-left: 5px;
+        }
+        .hobbies {
+            display: inline-block;
+            margin-top: 5px;
+        }
+        button {
+            margin-left: 50%;
+            transform: translateX(-50%);
+            margin-top: 40px;
+            padding: 5px 15px;
+        }
+        label[for=hobbies] {
+            transform: translateY(-50px);
+        }
+        label[for=note] {
+            transform: translateY(-56px);
+        }
+    </style>
+</head>
+<body>
+    <div class="main">
+        <h1>Đăng ký thông tin</h1>
+        <form>
+            <label for="name">Ho va ten</label>
+            <input type="text" class="input-m" name="name" id="name">
+            <label for="address">Dia chi</label>
+            <input type="text" class="input-m" name="address" id="address">
+            <label for="tel">Dien thoai</label>
+            <input type="tel" class="input-m" name="tel" id="tel">
+
+            <label >Gioi tinh</label>
+            <input type="radio" name="gender" id="male" value="Male">
+            <label for="male" class="gender" >Male</label>
+            <input type="radio" name="gender" id="female" value="Female">
+            <label for="female" class="gender" >Female</label>
+            <br>
+            <label for="acc">Ten tai khoan</label>
+            <input type="text" class="input-m" name="acc" id="acc">
+            <label for="pass">Mat khau</label>
+            <input type="password" class="input-m" name="pass" id="pass">
+            <label for="repass">Nhap lai mat khau</label>
+            <input type="password" class="input-m" name="repass" id="repass">
+            <label for="note">Ghi chu</label>
+            <textarea name="note" id="note" cols="30" rows="6"></textarea>
+            <br>
+            <label for="avatar">Anh avatar</label>
+            <input type="file" name="avatar" id="avatar">
+            <label for="hobbies">So thich</label>
+            <div class="hobbies">
+                <input type="checkbox" name="hobbies" id="game">
+                <label class="check-box-label" for="game">Game</label> <br>
+                <input type="checkbox" name="hobbies" id="game1">
+                <label class="check-box-label" for="game1">Game</label> <br>
+                <input type="checkbox" name="hobbies" id="game2">
+                <label class="check-box-label" for="game2">Game</label>
+            </div>
+            <br>
+            <button type="submit">Dong y</button>
+        </form>
+    </div>    
+</body>
+</html>

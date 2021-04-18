@@ -1,0 +1,119 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Document</title>
+    <style>
+        * {
+            margin: 0px;
+            padding: 0px;
+            box-sizing: border-box;
+        }
+        h2 {
+            margin-bottom: 40px;
+            padding-left: 20px;
+            margin-left: 20px;
+            background: rgb(203, 223, 149);
+        }
+        .main {
+            width: 720px;
+            height: 860px;
+            margin: auto;
+            margin-top: 100px;
+        }
+        label {
+            width: 170px;
+            display: inline-block;
+            margin: 16px 50px 0px 20px;
+        }
+        label.date {
+            width: auto;
+            margin-left: 0px;
+            margin-right: 5px;
+        }
+
+        input.date {
+        width: 40px;
+        }
+        .input-m
+        {
+            width: 400px;
+            height: 24px;
+            margin-top: 5px;
+        }
+        input[type=file] {
+            margin-bottom: 24px;
+            color: #000;
+        }
+        input[type=password],
+        input[type=email],
+        select,
+        button,
+        input[type=text] {
+            outline: none;
+            border: 1px solid rgb(92, 193, 233);
+            box-shadow: 0 0 3px 1px rgb(92, 193, 233);
+        }
+        .gender {
+            width: 30px;
+            margin-left: 5px;
+            margin-right: 10px;
+            line-height: 24px;
+        }
+    
+        button {
+            margin-left: 50%;
+            transform: translateX(-50%);
+            margin-top: 40px;
+            padding: 5px 15px;
+        }
+        .red-text {
+            color: red;
+        }
+    </style>
+</head>
+<body>
+    <div class="main">
+        <form>
+            <h2>Đăng ký thông tin</h2>
+            <div class="red-text">
+                <label for="acc">Ten tai khoan</label>
+                <input type="text" class="input-m" name="acc" id="acc">
+                <i>text more</i>
+                <label for="pass">Mat khau</label>
+                <input type="password" class="input-m" name="pass" id="pass">
+                <i>text more</i>
+                <label for="repass">Nhap lai mat khau</label>
+                <input type="password" class="input-m" name="repass" id="repass">
+                <label for="avatar">Anh avatar</label>
+                <input type="file" name="avatar" id="avatar">
+                <i>text more</i>
+            </div>    
+            <h2>Đăng ký thông tin</h2>
+            <label for="name">Ho va ten</label>
+            <input type="text" class="input-m" name="name" id="name">
+            <label for="mail">Dia chi email</label>
+            <input type="email" class="input-m" name="mail" id="mail">
+            <label >Gioi tinh</label>
+            <input type="radio" name="gender" id="male" value="Male">
+            <label for="male" class="gender" >Male</label>
+            <input type="radio" name="gender" id="female" value="Female">
+            <label for="female" class="gender" >Female</label>
+            <br>
+            <label for="day">Ngay sinh</label>
+            <label class="date" for="day">Ngay</label>
+            <input class="date" type="text" id="day">
+            <label class="date" for="month">Thang</label>
+            <input class="date" type="text" id="month">
+            <label class="date" for="year">Nam</label>
+            <input class="date" type="text" id="year">
+            <br>
+            <label for="country">Noi sinh</label>
+            <select id="country">
+                <option disabled selected>chon tinh</option>
+            </select>
+            <button type="submit">Dang ky tham gia</button>
+        </form>
+    </div>    
+</body>
+</html>
