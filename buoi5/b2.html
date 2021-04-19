@@ -13,7 +13,6 @@
             box-sizing: border-box;
         }
         body {
-            min-width: 1190px;
             background: url(./images/bgweb.jpg);
         }
         .main {
@@ -61,7 +60,7 @@
         }
         .content h2:first-child {
             margin-top: 20px;
-
+            
         }
         .nav {
             margin-top: 20px;
@@ -94,13 +93,23 @@
             margin-right: 5px;
             margin-bottom: 50px;
         }
-    </style>
+        @media only screen and (max-width: 1187px) {
+            .side-bar {
+                margin-top: -4px;
+            }
+            .img-header {
+                width: 820px;
+                left: 50%;
+                transform: translateX(0px);
+            }
+        }
+        </style>
 </head>
 <body>
-   <div class="main">
-       <div class="header">
-           <a href="bai1.html" target="_parent">
-               <img src="./images/logo_scaal.gif" alt="" class="img-header">
+    <div class="main">
+        <div class="header">
+            <a href="bai1.html" target="_parent">
+                <img src="./images/logo_scaal.gif" alt="" class="img-header">
             </a>
             <div class="side-bar">
                 <ul class="nav">
@@ -111,8 +120,8 @@
                 </ul>
             </div>
         </div>
-            <div class="right-side">
-        <div class="content">
+        <div class="right-side">
+            <div class="content">
             <h2>
                 Our Story 
             </h2>
