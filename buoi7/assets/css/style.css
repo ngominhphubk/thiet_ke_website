@@ -11,7 +11,7 @@ html {
     margin: auto;
     width: 780px;
 }
-h2 {
+.index__header {
     margin: 20px 0px;
     margin-left: 10px;
 }
@@ -133,4 +133,94 @@ li:hover img {
     position: absolute;
     bottom: 5px;
     left: 217px;
+}
+.content__component {
+    margin-top: 20px;
+    margin-left: 10px;
+    margin-right: 30px;
+}
+ /* index end */
+ 
+ /* personal css */
+ .content__component .main--content {
+     text-align: justify;
+     margin-top: 10px;
+ }
+ .content__component .content__item--list > li {
+     display: inline-block;
+     height: 70px;
+     width: 146px;
+     margin-bottom: 0px;
+     margin-top: 20px;
+ }
+.content__component .content__item--list img {
+    margin: 0px 0px;
+}
+.content__component .content--detail {
+    color: #0099ff;
+    margin-right: 0px;
+    margin-left: 55px;
+}
+.content__component .content--date {
+    left: 56px;
+    bottom: 0px;
+}
+.content__header {
+    padding-bottom: 10px;
+    border-bottom: 1px dotted rgb(48, 46, 46);
+    margin-bottom: 20px;
+}
+.content__header a {
+    text-decoration: none;
+    color: rgb(27, 236, 121);
+}
+.content__header a:hover {
+    color:rgb(233, 48, 109);
+    text-decoration: underline;
+}
+.content__header a:first-child {
+    padding-right: 20px;
+    border-right: 2px dashed #ccc ;
+}
+
+/* business css */
+.content__component .col-2 > li {
+    width: 220px;
+}
+.content__component .col-2 .content--date {
+ bottom: 16px;
+}
+/* register---css */
+.content__label {
+    display: inline-block;
+    width: 170px;
+}
+.label__title {
+    display: inline-block;
+    margin-left: 177px;
+}
+input[type=text],
+input[type=email],
+input[type=password],
+select {
+    margin: 5px 0px;
+}
+.sub__header {
+    background: rgb(44, 127, 221);
+    margin: 10px 0px;
+}
+.nhan_email  {
+    display: inline-block;
+}
+textarea {
+    min-width: 461px;
+    max-width: 462px;
+    max-height: 100px;
+}
+.nhan_email label {
+    width: 240px;
+}
+.footer {
+    float: right;
+    margin-top: 10px;
 }

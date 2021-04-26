@@ -1,0 +1,163 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./assets/css/style.css">
+    <title>Register</title>
+</head>
+<body>
+   <div class="main">
+
+    <div class="header">
+        <div class="header__banner">
+            <img src="./assets/images/banner_01.jpg" alt="">
+            <img src="./assets/images/banner_02.jpg" alt="">
+            <img src="./assets/images/banner_03.jpg" alt="">
+            <img src="./assets/images/banner_04.jpg" alt="">
+            <img src="./assets/images/banner_05.jpg" alt="">
+        </div>
+        
+        <div class="header__nav">
+            <ul >
+                <li><a href="./index.html">Trang chu</a></li>
+                <li><a href="">Gioi thieu</a></li>
+                <li><a href="">Tin tuc</a></li>
+                <li><a href="./personal.html">Dich vu</a></li>
+                <li><a href="">Khach hang</a></li>
+                <li><a href="./register.html">Lien he</a></li>
+            </ul>
+        </div>
+    </div>
+    <!-- end-header -->
+
+    <div class="sidebar__section">
+        <div class="sidebar sidebar__left">
+            <ul class="sidebar__content--list mt-24">
+                <li><a href="">Ty gia ngoai te</a></li>
+                <li><a href="">Ngan hang lien ket</a></li>
+                <li><a href="">Ngan hang dien tu</a></li>
+                <li><a href="">Lai xuat</a></li>
+                <li><a href="">Mang luoi hoat dong</a></li>
+                <li><a href="">Dich vu ngan hang</a></li>
+                <li><a href="">Gop y khach hang</a></li>
+            </ul>
+            <ul class="sidebar__image--list">
+                <li>
+                    <a href="">
+                        <img src="./assets/images/DONG_A.JPG" alt="">
+                    </a>
+                </li>
+                <li class="mt-7">
+                    <a href="">
+                        <img src="./assets/images/cam_on.jpg" alt="">
+                    </a>
+                </li>
+            </ul>   
+        </div>
+        <!-- end sidebar__left -->
+        <div class="sidebar sidebar__right">
+            <ul class="sidebar__image--list mt-24">
+                <li>
+                    <a href="">
+                            <img src="./assets/images/phat_hanh_ATM.jpg" alt="">
+                    </a>
+                </li>
+                <li>
+                    <a href="">
+                            <img src="./assets/images/ATM.jpg" alt="">
+                    </a>
+                </li>
+                <li>
+                    <a href="">
+                            <img src="./assets/images/cophieu.jpg" alt="">
+                    </a>
+                </li>
+                <li>
+                    <a href="">
+                            <img src="./assets/images/cophieu.jpg" alt="">
+                    </a>
+                </li>
+            </ul>   
+        </div>
+        <!-- end sidebar__right -->
+    </div>
+    <!-- end sidebar_section  -->
+    <div class="content">
+        <div class="content__component">
+            <h1>Dang ky</h1>
+            <h2 class="sub__header">Thong tin can nhap</h2>
+            <form action="">
+                <label for="account" class="content__label">Ten tai khoan</label>
+                <input type="text" name="" id="account">
+                <i class="label__title">xin moi ban nhap tai khoan tren dien dan</i>
+                <label for="pass" class="content__label">Mat khau</label>
+                <input type="password" name="" id="pass">
+                <label for="repass" class="content__label">Nhap lai mat khau</label>
+                <input type="password" name="" id="repass">
+                <i class="label__title">Chu y: mat khau co phan biet chu HOA chu thuong</i>
+                <label for="email" class="content__label">Dia chi Email</label>
+                <input type="email" name="" id="email">
+                <label for="reemail" class="content__label">Nhap lai dia chi Email</label>
+                <input type="email" name="" id="reemail">
+                <i class="label__title">Xin moi nhap lai dia chi Email cua ban</i>
+                <i class="label__title">Ban sinh ra o dau</i>
+                <label for="question" class="content__label">Cau hoi ngau nhien</label>
+                <input type="text" name="" id="question">
+                <h2 class="sub__header">Thong tin them</h2>
+                <label for="nguoi_gioi_thieu" class="content__label">nguoi gioi thieu</label>
+                <input type="text" name="" id="nguoi_gioi_thieu">
+                <i class="label__title">Neu ban duoc gioi thieu boi thanh vien trong dien dan
+                    xin hay nhap tai khoan thanh vien do vao day.
+                </i>
+                <label for="time_zone" class="content__label">Mui gio</label>
+                <select name="" id="time_zone">
+                    <option value="Mui gio +7">Mui gio +7</option>
+                </select>
+                <br>
+                <label for="" class="content__label">Nhan Email</label>
+                <div class="nhan_email">
+                    <input type="checkbox" name="" id="mem">
+                    <label  class="content__label" for="mem">Nhan Email tu ban quan tri</label>
+                    <br>
+                    <input type="checkbox" name="" id="other_mem">
+                    <label class="content__label" for="other_mem">Nhan Email tu thanh vien khac</label>
+                </div>
+                <i class="label__title">Thinh thoang ban quan tri co nhung thong tin den 
+                    cac thanh vien. Hay chon nhan email tu ban quan tri de nhan thong tin moi nhanh
+                    nhat.
+                </i>
+                <h2 class="sub__header">Noi quy - Quy dinh</h2>
+                <textarea name="" id="" cols="30" rows="10" readonly >
+Forum Rules
+
+Registration to this forum is free! We do insist that you abide by the rules and policies detailed below. If you agree to the terms, please check the 'I agree' checkbox and press the 'Complete Registration' button below. If you would like to cancel the registration, click here to return to the forums index.
+
+Quy ước Diễn đàn 
+húng tôi không bắt buộc bạn phải đăng ký thành viên nếu chỉ tham quan diễn đàn (Chỉ đọc các bài viết trên diễn đàn ).
+Trước khi đăng ký tất cả đều phải đồng ý với những quy ước sau:
+
+Tất cả bài gởi đều phải viết bằng tiếng Việt có dấu hoặc không dấu .
+Không được bàn về chuyện chính trị, tôn giáo hay những đề tài dễ gây hiềm khích.
+Không được kỳ thị chủng tộc, giới tính, nơi cư ngụ hay tuổi tác.
+Xin hãy cư xử hoà nhã với nhau! Chúng tôi sẽ không chấp nhận bất cứ hình thức công kích, mạ lị nào nhắm vào một cá nhân hay một đoàn thể.
+Không được gởi bài hoặc hình ảnh có nội dung thô tục, khiêu dâm.
+Nếu vi phạm chúng tôi sẽ tước quyền lợi thành viên mà không cần phải báo trước..
+
+                </textarea>
+                <br>
+                <input type="checkbox" name="" id="">
+                <label for="">Toi da doc va dong y voi cac dieu khoan cua dien dan</label>
+                <div class="footer">
+                    <button type="submit">Hoan tat dang ky</button>
+                    <input type="reset" value="Nhap lai">
+                </div>
+            </form>
+        </div>
+        <!-- end--content__component -->
+    </div>
+    <!-- end content -->
+   </div> 
+</body>
+</html>
